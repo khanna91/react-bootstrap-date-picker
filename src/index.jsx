@@ -538,7 +538,7 @@ export default React.createClass({
         return (
             <InputGroup ref="inputGroup"  bsClass={this.props.showClearButton ? this.props.bsClass : ""} bsSize={this.props.bsSize} id={this.props.id ? this.props.id + "_group" : null}>
                 <Overlay rootClose={true} onHide={this.handleHide} show={this.state.focused} container={() => this.props.calendarContainer || ReactDOM.findDOMNode(this.refs.overlayContainer)} target={() => ReactDOM.findDOMNode(this.refs.input)} placement={this.props.calendarPlacement} delayHide={200}>
-                    <Popover id="calendar" title={calendarHeader}>
+                    <Popover id="calendar" title={calendarHeader} className="date-time-picker">
                         <Calendar cellPadding={this.props.cellPadding} selectedDate={this.state.selectedDate} displayDate={this.state.displayDate} onChange={this.onChangeDate} dayLabels={this.state.dayLabels} weekStartsOnMonday={this.props.weekStartsOnMonday} />
                         {this.renderTime()}
                     </Popover>
