@@ -101,6 +101,7 @@ DatePicker component. Renders as a [React-Bootstrap InputGroup](https://react-bo
     * **Callback Arguments:**
       * `event` - Blur event.
         * **Type:** `Event`
+  * `timeFormat` - Boolean. true will show the time input bar (12 hour time support).
   * `dateFormat` - Date format. Any combination of DD, MM, YYYY and separator.
     * **Optional**
     * **Type:** `string`
